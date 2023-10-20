@@ -23,6 +23,17 @@ body {
     max-width: 500px;
 }
 
+.caixa-media{
+    margin-top: 20px;    
+
+}
+
+.temp{
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
 .input-cidade{
 border: none;
 outline: none;
@@ -31,7 +42,7 @@ border-radius: 25px;
 font-size: 20px;
 background-color: #7c7c7c2b;
 color: #ffffff;
-width: calc(82%);
+width: calc(88%);
 
 }
 
@@ -39,7 +50,7 @@ width: calc(82%);
     border: none;
     outline: none;
     padding: 10px;
-    border: 50px;
+    border-radius: 50px;
     background-color: #7c7c7c2b ;
     cursor: pointer;
     float: right;
@@ -52,7 +63,24 @@ width: calc(82%);
 
 .cidade{
     color: #ffffff;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 300px;
-   
+  
+}
+
+.caixa_menor{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.texto_previsao{
+    color: #ffffff;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.umidade{
+    color: #ffffff;
+    margin-top: 20px;
 }

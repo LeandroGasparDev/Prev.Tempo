@@ -7,26 +7,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"> </script> 
     <title>Previsão do Tempo</title>
 </head>
 <body>
     <div class="caixa-maior">    
-        <input class="input-cidade" type="Digite o nome da Cidade">
-        <button class="btn_buscar" > <img class="img_buscar" src="https://www.svgrepo.com/show/488200/find.svg" alt="Busca"> </button>
+        <input class="input-cidade" placeholder="Digite o nome da Cidade">
+        <button class="btn_buscar" onclick="buscarDados()"> 
+            <img class="img_buscar" src="https://www.svgrepo.com/show/488200/find.svg" alt="Busca"> 
+        </button>
 
         <div class="caixa_media">
-            <h2 class="cidade" > Tempo em ....</h2>
+            <h2 class="cidade">Tempo em ...</h2>
 
-            <p class="temp" >21 graus</p>
+            <p class="temp">0 °C</p>
 
             <div class="caixa_menor">
-                <img class="img_previsao" alt="icone-info-tempo" src="https://openweathermap.org/img/wn/04n.png" alt="">
-                <p class="texto_previsao">Nublaso</p>
-                
+                <img class="img_previsao" src="https://openweathermap.org/img/wn/04n.png" alt="icone-info-tempo">
+                <p class="texto_previsao">Nublado</p>
             </div>
+            <p class="umidade">Umidade ... </p>
         </div>
-
     </div>
-
 </body>
 </html>
