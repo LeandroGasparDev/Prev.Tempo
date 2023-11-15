@@ -21,7 +21,17 @@ async function buscarCidade (CIDADE){
    
 function buscarDados() {
     const CIDADE = document.querySelector(".input-cidade").value;
-    // console.log(CIDADE)    
+
+    // Obtém o elemento de mensagem de erro
+    var cidadeError = document.getElementById('cidadeError');
+    // Verifica se o campo de entrada está vazio
+    if (CIDADE.trim() === '') {
+        // Adicione aqui o código para lidar com o campo vazio
+        cidadeError.textContent = 'Por favor, digite o nome da cidade.';
+        return;
+    }
+    cidadeError.textContent = '';    
+
     buscarCidade(CIDADE);
 }
 
